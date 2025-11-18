@@ -1,0 +1,83 @@
+.profile-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f0f8ff);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.profile-container h2 {
+  color: #0072ff;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-bottom: 2px solid #e3f2fd;
+  padding-bottom: 8px;
+}
+
+.city-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.city-box {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #00796b;
+  border-radius: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.city-box:hover {
+  background: linear-gradient(135deg, #b2ebf2, #80deea);
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.city-box .remove-btn {
+  background: transparent;
+  border: none;
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.city-box .remove-btn:hover {
+  color: #b71c1c;
+  transform: scale(1.2);
+}
+
+.add-city-button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-city-button:hover {
+  background: linear-gradient(135deg, #005bb5, #00a1cc);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}

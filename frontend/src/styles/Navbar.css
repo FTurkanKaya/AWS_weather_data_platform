@@ -1,0 +1,77 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937; /* koyu gri */
+  color: #ffffff;
+  padding: 10px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* width: 100% yerine sağ ve sol sınırları tanımla */
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* taşmayı engelle */
+}
+
+.navbar-logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f59e0b; /* turuncu logo */
+  white-space: nowrap;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  background-color: #374151;
+}
+
+.navbar-logout {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.navbar-logout:hover {
+  background-color: #b91c1c;
+}
+
+.navbar-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 1.1;
+}
+
+.greeting-icon {
+  font-size: 1.1rem;
+  margin-bottom: 1px;
+}
+
+.welcome-text {
+  font-size: 0.8rem;
+  color: #fbbf24;
+}
